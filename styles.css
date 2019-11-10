@@ -1,11 +1,23 @@
+
+
 h1 {
+  font-family: 'Martel', serif;
   color: yellowgreen;
+
+}
+h2, h3, {
+  font-family: 'Martel', serif;
+  color: darkSlateblue;
+}
+p, a {
+  font-family: 'Martel', serif;
 
 }
 .title-words {
   position: absolute;
   padding-top: 10%;
   margin-left: 5%;
+  font-style: italic;
 
 }
 header {
@@ -68,6 +80,8 @@ nav {
   border: none;
   color: white;
   padding: 1%;
+  height: 50%;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
