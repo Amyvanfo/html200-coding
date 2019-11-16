@@ -5,7 +5,7 @@ h1 {
   color: yellowgreen;
 
 }
-h2, h3, {
+h2, h3 {
   font-family: 'Martel', serif;
   color: darkSlateblue;
 }
@@ -107,4 +107,5 @@ footer {
     background-color: Midnightblue;
     display: block;
     clear: both;
+    
 }
