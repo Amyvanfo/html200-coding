@@ -2,7 +2,8 @@
 
 h1 {
   font-family: 'Martel', serif;
-  color: yellowgreen;
+  color: rgb(102, 153, 0);
+  font-size: 1rem;
 
 }
 h2, h3 {
@@ -11,14 +12,22 @@ h2, h3 {
 }
 p, a {
   font-family: 'Martel', serif;
+}
+.form {
+  position: relative;
+  font-family: 'Martel' , serif;
+  margin-left: 25%;
 
 }
+
 .title-words {
   position: absolute;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-left: 5%;
   font-style: italic;
-
+}
+.logo {
+  width: 100%;
 }
 header {
   position: relative;
@@ -31,13 +40,20 @@ nav {
   position: relative;
   padding: 1rem;
   background-color: lightGray;
-  color: darkSlateblue;
+  color: rgb(17, 64, 105);
+}
+.footnav{
+  background-color:;
+  color: white;
 }
 .checkout {
   color: white;
   position: absolute;
   top: 8rem;
   right: 16rem;
+}
+.cart {
+  width: 2.5rem;
 }
 .subhead {
   position: relative;
@@ -70,16 +86,19 @@ nav {
 }
 
 .blog-container {
-  margin-left: 15%;
+  margin: auto;
   float: left;
-  width: 33%;
-  padding: 5rem;
+  padding: 1rem;
+  display: flex;
+}
+.blog {
+  margin-left: 10%;
 }
 .button {
-  background-color: yellowgreen;
+  background-color: rgb(102, 153, 0);
   border: none;
   color: white;
-  padding: 1%;
+  padding: 0%;
   height: 50%;
   width: 100%;
   text-align: center;
@@ -99,13 +118,21 @@ nav {
 .column {
   position: relative;
   flex: 1;
-  padding: 1rem;
+  padding: ;
   height: 5%;
 }
+.footlogo {
+  width: 25%;
+}
+.footnav {
+  background-color: rgb(17, 64, 105);
+}
+
+
 footer {
     text-align: center;
-    background-color: Midnightblue;
+    background-color:rgb(17, 64, 105);
     display: block;
     clear: both;
-    
+    color: white;
 }
