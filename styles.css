@@ -1,5 +1,4 @@
 
-
 h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
@@ -10,14 +9,28 @@ h2, h3 {
   font-family: 'Martel', serif;
   color: darkSlateblue;
 }
-p, a {
+h6 {
   font-family: 'Martel', serif;
+  color: darkSlateblue;
+  font-size: 1rem;
+}
+a {
+font-family: 'Martel', serif;
+font-size: 1rem;
+}
+h5 {
+  font-family: 'Martel', serif;
+  color: white;
+  font-size: .8rem;
+}
+p  {
+  font-family: 'Martel', serif;
+  font-size: .8rem;
 }
 .form {
   position: relative;
   font-family: 'Martel' , serif;
   margin-left: 25%;
-
 }
 
 .title-words {
@@ -32,10 +45,7 @@ p, a {
 header {
   position: relative;
 }
-img {
-  width:100%;
-  height: auto;
-}
+
 nav {
   position: relative;
   padding: 1rem;
@@ -43,7 +53,7 @@ nav {
   color: rgb(17, 64, 105);
 }
 .footnav{
-  background-color:;
+  background-color:rgb(17, 64, 105) ;
   color: white;
 }
 .checkout {
@@ -58,13 +68,14 @@ nav {
 .subhead {
   position: relative;
 }
+
 [class*="col-"] {
   float: left;
   margin-left: 2%;
   padding: 1%;
   border: 1px solid lightgray;
 }
-.col-1 {width: 16.66%;}
+.col-1 {width: 20.66%;}
 .col-2 {width: 33.33%;}
 .col-3 {width: 50%;}
 .col-4 {width: 66.66%;}
@@ -85,15 +96,28 @@ nav {
   align-items: center;
 }
 
-.blog-container {
-  margin: auto;
+.blog-photo {
   float: left;
   padding: 1rem;
-  display: flex;
+
 }
 .blog {
-  margin-left: 10%;
+  margin-left: 15%;
 }
+.submitbutton {
+  background-color: rgb(102, 153, 0);
+  border: none;
+  color: white;
+  padding: 0%;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .button {
   background-color: rgb(102, 153, 0);
   border: none;
@@ -104,7 +128,7 @@ nav {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
   cursor: pointer;
 }
 .text {
@@ -118,16 +142,15 @@ nav {
 .column {
   position: relative;
   flex: 1;
-  padding: ;
   height: 5%;
 }
 .footlogo {
   width: 25%;
 }
-.footnav {
-  background-color: rgb(17, 64, 105);
+img {
+  width: 100%;
+  height: auto;
 }
-
 
 footer {
     text-align: center;
