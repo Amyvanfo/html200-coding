@@ -1,4 +1,10 @@
 
+{
+  margin: 0;
+  padding: 0;
+}
+
+
 h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
@@ -52,6 +58,9 @@ nav {
   background-color: lightGray;
   color: rgb(17, 64, 105);
 }
+section {
+  padding: 1rem;
+}
 .footnav{
   background-color:rgb(17, 64, 105) ;
   color: white;
@@ -72,6 +81,7 @@ nav {
 [class*="col-"] {
   float: left;
   margin-left: 2%;
+  margin-top: 1rem;
   padding: 1%;
   border: 1px solid lightgray;
 }
