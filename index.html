@@ -7,18 +7,19 @@
 </head>
 <body>
   <h1>Lesson 5 Bank Application</h1>
+  <p>Click on the button below to open the banking application</p>
+<button onclick="openApp()">Start Banking</button>
+<p id="demo"></p>
 
-<div id="bankApp"">
-  <p>Click on one of the choices below</p>
-  <p id="deposit" onclick ="bankAction()">D Make a deposit</p><br>
-  <p id="withdraw" onclick ="withdraw()"> W Withdraw funds</p>
-   <br>
-  <p id="balance" onclick ="getBalance()">B get balance</p><br>
-  <p id="Quit" onclick ="quitApp()">Q to Quit the application</p><br>
-  </div>
+<div id="bankApp">
+  <p id="withdraw" onclick ="withdraw()"></p>
+  <p id="deposit" onclick ="depositAction()"></p><br>
+  <p id="balance" onclick ="getBalance()"></p><br>
+  <p id="Quit" onclick ="quitApp()"></p><br>
+</div>
 
-<input type="button" onclick="showElem()" value="Open the banking application">
-<input type="button" onclick="hideElem()" value="Quit: Close the banking application">
+<!--<input type="button" onclick="showElem()" value="Open the banking application">
+<!--<input type="button" onclick="hideElem()" value="Quit: Close the banking application">
 
 </body>
 </html>
