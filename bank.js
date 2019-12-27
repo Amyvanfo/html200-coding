@@ -1,40 +1,44 @@
-
+let balance = 10;
 
 function openApp() {
-  var txt;
+var txt;
+while (letter !== "Q"){
+
   var letter = prompt("Please enter your selection: Type W to withdraw, Type D to make a deposit, Type B to get your bank balance Type Q to quit the banking application", "");
-  if (letter == null || letter == "") {
-    txt = "User cancelled the prompt.";
+  if (letter === null || letter === "") {
+    txt = "User canceled the prompt.";{
+    document.getElementById("demo").innerHTML = txt;
+    break;
+  }
   } else if (letter === 'D') {
     depositAction();
   } else if (letter === 'W') {
     withdraw();
   } else if (letter === 'B') {
-    balance();
+    getBalance();
   } else if(letter === "Q"){
     quitApp();
+    break;
   } else {
     txt = "Please choose a valid option";
     document.getElementById("demo").innerHTML = txt;
+    break;
   }
 }
-
+}
 function depositAction() {
       let input = prompt('add deposit amount')
-      let result = 0;
-      result = Number(input);
-      alert(result + 1000)
+      balance = Number(input) + balance;
+      alert(balance)
     }
 function withdraw() {
       let input = prompt('enter withdrawal amount')
-      let result = 0;
-      result = Number(input);
-      alert(1000 - input)
+      balance = balance - Number(input);
+      alert(balance)
 
 }function getBalance() {
-    alert('Your balance is $1000');
+    alert('your balance is $' + balance) ;
 }
 function quitApp() {
     document.getElementById("Quit").innerHTML = "Goodbye";
-    prompt('enter Q to quit the application');
-}
+    }
