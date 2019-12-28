@@ -1,9 +1,14 @@
-
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 {
   margin: 0;
   padding: 0;
 }
-
 
 h1 {
   font-family: 'Martel', serif;
@@ -82,30 +87,34 @@ section {
 .subhead {
   position: relative;
 }
-
+/*columns*/
 .column {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 16.6%;
+  padding: 0px;
+}
+.blog-column {
+  float: right;
+  width: 20%;
+  padding: 10px;
 }
 .row {margin: 0 -5px;}
-
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.blog-row:after {
+  content: "";
+  display: grid;
+  clear: both;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
+  padding: 2px;
+  margin-left: 5px;
+  text-align: left;
   background-color: #f1f1f1;
 }
 
@@ -140,7 +149,6 @@ section {
 .blog-photo {
   float: left;
   padding: 1rem;
-
 }
 .blog {
   margin-left: 15%;
