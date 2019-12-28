@@ -106,6 +106,13 @@ section {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .header-image {
+      display: block;
+      float: none;
+  }
+}
+
 .blog-photo {
   float: left;
   padding: 1rem;
