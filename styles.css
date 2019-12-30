@@ -1,15 +1,10 @@
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .column {
     width: 100%;
-    display: block;
+    display: grid;
     margin-bottom: 20px;
   }
 }
-{
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
@@ -56,7 +51,6 @@ p  {
 header {
   position: relative;
 }
-
 nav {
   position: relative;
   padding: 1rem;
@@ -64,19 +58,30 @@ nav {
   color: rgb(17, 64, 105);
 }
 section {
-  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+.flex-container
+  {flex-wrap: wrap;
+
+}
+div.card {
+  clear: both;
+}
+
 .header-image {
   width: 35%;
   display: inline-flex;
 }
-
 .footnav{
   background-color:rgb(17, 64, 105) ;
   color: white;
 }
 .checkout {
   color: white;
+  display: inline;
   position: absolute;
   top: 8rem;
   right: 16rem;
@@ -87,71 +92,39 @@ section {
 .subhead {
   position: relative;
 }
-/*columns*/
-.column {
-  float: left;
-  width: 16.6%;
-  padding: 0px;
-}
-.blog-column {
-  float: right;
-  width: 20%;
-  padding: 10px;
-}
-.row {margin: 0 -5px;}
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.blog-row:after {
-  content: "";
-  display: grid;
-  clear: both;
-}
+/*.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}*/
+
 .card {
+  max-width: 33%;
+  min-width: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 2px;
-  margin-left: 5px;
+  margin-left: ;
   text-align: left;
   background-color: #f1f1f1;
-}
+  border: 1px;
+  border-color: lightGray;
 
-/*[class*="col-"] {
-  float: left;
-  margin-left: 2%;
-  margin-top: 1rem;
-  padding: 1%;
-  border: 1px solid lightgray;
-}
-.col-1 {width: 20.66%;}
-.col-2 {width: 33.33%;}
-.col-3 {width: 50%;}
-.col-4 {width: 66.66%;}
-.col-5 {width: 83.3%;}
-.col-6 {width: 100%;}
-*/
-.grid-container1 {
-  margin-right: 15%;
-  margin-left: 16%;
-  padding-right: 1%;
-  float: left;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.grid-container {
-  margin-right: 15%;
-  margin-left: 15%;
-  align-items: center;
-}
+  }
 
 .blog-photo {
   float: left;
+  clear: left;
   padding: 1rem;
 }
 .blog {
-  margin-left: 15%;
+  margin-left: 25%;
+  margin-right: 20%;
+  display: inline-block;
+}
+.blog-text {
+  float: right;
+  width: 55%;
+  padding-left: 10px;
 }
 .submitbutton {
   background-color: rgb(102, 153, 0);
@@ -176,27 +149,33 @@ section {
   width: 100%;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   font-size: 1rem;
   cursor: pointer;
 }
-.text {
-  margin-left: 2%;
-}
-.card {
-  border: 1px;
-  border-color: lightGray;
-  margin: 2rem
+.text, .man-dog {
+  margin-left: 25%;
+  display: block;
+  width: 50%;
 }
 .column {
   position: relative;
-  flex: 1;
+  flex: 3;
   height: 5%;
+}
+.blog-column {
+  position: relative;
+  flex: 1;
+  height
+}
+.blog-row {
+  float: right;
+  max-width: 16%
 }
 .footlogo {
   width: 25%;
 }
-img {
+img  {
   width: 100%;
   height: auto;
 }
