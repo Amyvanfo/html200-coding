@@ -1,11 +1,15 @@
-
-* {
-  box-sizing: border-box;
+@media screen and (min-width: 600px) {
+  .column {
+    width: 100%;
+    display: grid;
+    margin-bottom: 20px;
+  }
 }
 h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
   font-size: 1rem;
+
 }
 h2, h3 {
   font-family: 'Martel', serif;
@@ -34,6 +38,7 @@ p  {
   font-family: 'Martel' , serif;
   margin-left: 25%;
 }
+
 .title-words {
   position: absolute;
   padding-top: 5%;
@@ -53,26 +58,29 @@ nav {
   color: rgb(17, 64, 105);
 }
 section {
-  padding: 1rem;
-  margin-left: 20%
-  margin-right: 20%;
-  }
-aside {
-    width: 25%;
-    float: right;
-  }
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.flex-container
+  { display: flex;
+    flex-wrap: wrap;
+}
+div.card {
+  clear: both;
+}
 
-.main {
-    width: 50%;
-    margin-left: 16%;
-  }
-
+.header-image {
+  width: 35%;
+  display: inline-flex;
+}
 .footnav{
   background-color:rgb(17, 64, 105) ;
   color: white;
 }
 .checkout {
   color: white;
+  display: inline;
   position: absolute;
   top: 8rem;
   right: 16rem;
@@ -80,75 +88,35 @@ aside {
 .cart {
   width: 2.5rem;
 }
- .man-dog {
-  margin-left: 25%;
-  margin-right: 25%;
-  display: inline-block;
-  width: 50%;
+.subhead {
+  position: relative;
 }
+/*.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}*/
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto;)
-  }
-.grid-container > div {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  align-items: center;
-}
-col-1 > div {
-  width: ;
-  padding: 10px;
-}
 .card {
-    display: inline-grid;
-    max-width: 100%;
-    min-width: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 2px;
-    text-align: left;
-    background-color: #f1f1f1;
-    border: 1px;
-    border-color: lightGray;
-  }*/
+  max-width: 33%;
+  min-width: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  margin-left: ;
+  text-align: left;
+  background-color: #f1f1f1;
+  border: 1px;
+  border-color: lightGray;
 
-[class*="col-"] {
-  float: left;
-  margin-left: 2%;
-  margin-top: 1rem;
-  padding: 1%;
-  border: 1px solid lightgray;
-}
-.col-1 {width: 20%;}
-.col-2 {width: 33.33%;}
-.col-3 {width: 50%;}
-.col-4 {width: 66.66%;}
-.col-5 {width: 83.3%;}
-.col-6 {width: 100%;}
-
-.grid-container1 {
-  margin-right: 15%;
-  margin-left: 16%;
-  padding-right: 1%;
-  float: left;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.blog-preview {
   }
-.blog-row {
-}
+
 .blog-photo {
   float: left;
   clear: left;
   padding: 1rem;
 }
 .blog {
-  margin-left: 20%;
+  margin-left: 25%;
   margin-right: 20%;
   display: inline-block;
 }
@@ -157,7 +125,6 @@ col-1 > div {
   width: 55%;
   padding-left: 10px;
 }
-
 .submitbutton {
   background-color: rgb(102, 153, 0);
   border: none;
@@ -176,30 +143,39 @@ col-1 > div {
   background-color: rgb(102, 153, 0);
   border: none;
   color: white;
-  padding: 2%;
-  height: auto;
+  padding: 0%;
+  height: 50%;
   width: 100%;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
   font-size: 1rem;
   cursor: pointer;
 }
-
-.card {
-  border: 1px;
-  border-color: lightGray;
-  margin: 2rem
+.text, .man-dog {
+  margin-left: 25%;
+  display: block;
+  width: 50%;
 }
 .column {
   position: relative;
-  flex: 1;
+  flex: 3;
   height: 5%;
+}
+.blog-column {
+  position: relative;
+  flex: 1;
+  height
+}
+.blog-row {
+  float: right;
+  max-width: 16%;
+
 }
 .footlogo {
   width: 25%;
 }
-img {
+img  {
   width: 100%;
   height: auto;
 }
@@ -211,26 +187,3 @@ footer {
     clear: both;
     color: white;
 }
-@media screen and (max-width: 600px){
-
-body{background: green;}
-}
-@media screen and (min-width: 600px) {
-  body{background: blue;}
-}
-@media screen and (min-width: 800px) {
-body{background: white;}
-}
-
-/*.subheader {
-  width: 33%;
-  display: inline;
-}*/
-/*flex version*/
-/*.grid-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-left: 25%;
-}*/
