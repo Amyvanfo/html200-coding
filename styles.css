@@ -1,37 +1,41 @@
-
+serif
 * {
   box-sizing: border-box;
 }
 h1 {
-  font-family: 'Martel', serif;
+  font-family: 'martel', serif;
   color: rgb(102, 153, 0);
   font-size: 1rem;
 }
 h2, h3 {
-  font-family: 'Martel', serif;
+  font-family: 'martel', serif;
+  color: MidnightBlue;
+}
+h4 {
+  font-family: 'martel';
   color: darkSlateblue;
 }
 h6 {
-  font-family: 'Martel', serif;
-  color: darkSlateblue;
+  font-family: 'martel', serif;
+  color: MidnightBlue;
   font-size: 1rem;
 }
 a {
-font-family: 'Martel', serif;
+font-family: 'martel', serif;
 font-size: 1rem;
 }
 h5 {
-  font-family: 'Martel', serif;
+  font-family: 'martel', san-serif;
   color: white;
   font-size: .8rem;
 }
 p  {
-  font-family: 'Martel', serif;
+  font-family: 'martel', serif;
   font-size: .8rem;
 }
 .form {
   position: relative;
-  font-family: 'Martel' , serif;
+  font-family: 'martel' , sans-serif;
   margin-left: 25%;
 }
 .title-words {
@@ -53,21 +57,21 @@ nav {
   color: rgb(17, 64, 105);
 }
 section {
-  padding: 1rem;
   }
 aside {
-    width: 25%;
+    width: 20%;
     float: right;
+    margin-right: 15%;
+    margin-left: 4%;
   }
-
 .main {
-    width: 55%;
-    margin-left: 16%;
+    width: 50%;
+    margin-left: 20%;
   }
 .main-dogs {
-  width: 50%;
-  margin-left: 16%;}
-
+  width: 60%;
+  margin-left: 20%;
+}
 .footnav{
   background-color:rgb(17, 64, 105) ;
   color: white;
@@ -81,37 +85,45 @@ aside {
 .cart {
   width: 2.5rem;
 }
- .man-dog {
-  margin-left: 15%;
+.man-dog {
+  padding-top: 5%;
   margin-right: 15%;
   display: inline-block;
   width: 50%;
 }
-
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-
   }
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    }
 .grid-container > div {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   align-items: center;
 }
+.grid-container-2 > div {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
 col-1 > div {
-  
   padding: 10px;
 }
 .col-1 {
     display: inline-grid;
-    max-width: 100%;
+    max-width: 90%;
     min-width: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2px;
     text-align: left;
-    background-color: #f1f1f1;
+    background-color: white;
     border: 1px;
     border-color: lightGray;
   }
@@ -215,7 +227,7 @@ footer {
    width: 100%;
   }
   .checkout {
-    top: 1rem;
+    top: .5rem;
     right: 1rem;
     position: fixed;
   }
@@ -224,6 +236,12 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
     width: 100%;
+  }
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 90%;
   }
   aside {
     display: none;
@@ -249,6 +267,13 @@ footer {
     grid-gap: 10px;
     width: 80%;
   }
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+  }
+
   aside {
     width: 90%;
     }
